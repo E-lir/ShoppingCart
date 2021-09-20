@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width"/>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="cart.js" async></script>
+</head>
+<body>
+    <div class="container">
+        <!--Navbar-->
+        <div class="navbar">
+            <div class="logo">
+                <a href="./index.html"><img src="images/placeholder-image.png" width="100px"></a>
+            </div>
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="">Products</a></li>
+                    <li><a href="">Stores</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon-container">
+                <a href="./cart.html"><img src="images/cart.png" class="cart-icon" width="25px" height="25px"></a>
+                <span class='cart-counter'>0</span>
+            </div>
+            <img src="images/menuicon.png" class="menu-icon" onclick="menuToggle()">
+        </div>
+
+        <!--Featured Products-->
+        <div class="products">
+            <h1 class="title">Featured Products</h1>
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/tshirt.jpg" style="width:100%">
+                    <h3>Shirt</h3>
+                    <p>$24.99</p>
+                    <button class="btn-addToCart" type="button">ADD TO CART</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/pants.jpg" style="width:100%">
+                    <h3>Pants</h3>
+                    <p>$29.99</p>
+                    <button class="btn-addToCart" type="button">ADD TO CART</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/jacket.jpg" style="width:100%">
+                    <h3>Jacket</h3>
+                    <p>$54.99</p>
+                    <button class="btn-addToCart" type="button">ADD TO CART</button>
+                </div>
+                <div class="col-4">
+                    <img src="images/socks.jpg" style="width:100%">
+                    <h3>Socks (3 Pack)</h3>
+                    <p>$9.99</p>
+                    <button class="btn-addToCart" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <ul>
+                        <h3>Orders</h3>
+                        <li><a href="">Track Order</a></li>
+                        <li><a href="">Delivery</a></li>
+                        <li><a href="">Click & Collect</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-2">
+                    <ul>
+                        <h3>Customer Service</h3>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">Store Finder</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-3">
+                    <ul>
+                        <h3>Follow us</h3>
+                        <li><a href=""><img src="images/Facebook.png" style="width:30px"></a></li>
+                        <li><a href=""><img src="images/twitter.png" style="width:30px"></a></li>
+                        <li><a href=""><img src="images/instagram.png" style="width:30px"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
